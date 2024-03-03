@@ -36,3 +36,57 @@
     transform: rotate(360deg);
   }
 }
+
+.toggle:before, .toggle:after {
+	background: hsl(0,0%,90%);
+}
+.toggle {
+	position: relative;
+}
+.sr, .toggle:before, .toggle:after {
+	position: absolute;
+}
+ .sr {
+	top: 0;
+	left: 0;
+}
+.sr, .toggle {
+	overflow: hidden;
+}
+.sr {
+	clip: rect(1px,1px,1px,1px);
+	color: transparent;
+	width: 1px;
+	height: 1px;
+}
+.toggle {
+	background: currentColor;
+	border-radius: 0.75em;
+	cursor: pointer;
+	width: 3em;
+	height: 1.5em;
+	-webkit-appearance: none;
+	appearance: none;
+	-webkit-tap-highlight-color: transparent;
+}
+.toggle:before, .toggle:after {
+	border-radius: 50%;
+	content: "";
+	display: block;
+	top: 0.25em;
+	left: 0.25em;
+	width: 1em;
+	height: 1em;
+}
+.toggle:before {
+	transform: translateX(-1.5em);
+}
+.toggle:checked:before {
+	transform: translateX(1.5em);
+}
+.toggle:checked:after {
+	transform: translateX(3em);
+}
+.toggle:focus {
+	outline: transparent;
+}
