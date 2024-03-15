@@ -1,0 +1,66 @@
+.toolbarClassName,
+.wrapperClassName {
+  background-color: #042743;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.editor {
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+div.rdw-option-wrapper {
+  background-color: #042743;
+  color: white;
+  border-color: #042743;
+}
+
+div.rdw-option-active {
+  filter: invert(100%);
+}
+
+div.rdw-dropdown-wrapper,
+div.rdw-dropdown-wrapper:hover,
+div.rdw-dropdown-wrapper > ul,
+div.rdw-dropdown-wrapper > ul:hover,
+div.rdw-image-modal {
+  background-color: #042743;
+  border-color: #042743;
+}
+
+li.rdw-dropdownoption-active,
+li.rdw-dropdownoption-highlighted {
+  color: #042743;
+}
+
+div.rdw-dropdown-wrapper > a,
+div.rdw-dropdown-wrapper > a:hover {
+  color: black;
+  text-decoration: solid;
+  filter: invert(100%);
+}
+
+div.rdw-option-wrapper > img {
+  filter: invert(100%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: rgb(219, 52, 30);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+}
