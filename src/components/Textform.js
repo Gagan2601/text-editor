@@ -14,8 +14,8 @@ import {
   HarmBlockThreshold,
 } from "@google/generative-ai";
 
-const MODEL_NAME = "AIzaSyCGXp26JdKMEiS7hIE-9GNrazbLS8piomU";
-const API_KEY = "gemini-pro";
+const MODEL_NAME = "gemini-pro";
+const API_KEY = "AIzaSyCGXp26JdKMEiS7hIE-9GNrazbLS8piomU";
 
 export default function Textform(props) {
   const [editorState, setEditorState] = useState(EditorState.createEmpty());
