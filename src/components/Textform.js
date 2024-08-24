@@ -15,7 +15,7 @@ import {
 } from "@google/generative-ai";
 
 const MODEL_NAME = "gemini-pro";
-const API_KEY = "AIzaSyCGXp26JdKMEiS7hIE-9GNrazbLS8piomU";
+const API_KEY = "AIzaSyDz_13eRm_8Lzzgs7KsKsbdZecZzHYnfHQ";
 
 export default function Textform(props) {
   const [editorState, setEditorState] = useState(EditorState.createEmpty());
@@ -63,7 +63,7 @@ export default function Textform(props) {
             role: "user",
             parts: [
               {
-                text: `check misspelling and grammar errors in this text and give answer in response as it is with corrected text and nothing else - ${textToCorrect}`,
+                text: `check misspelling and grammar errors in the given text and give answer in response as it is with corrected text, grammer mistakes and nothing else - ${textToCorrect}`,
               },
             ],
           },
